@@ -3,7 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/llMain"
+    android:id="@+id/llmain"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
@@ -16,7 +16,7 @@
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hoď kostkou"
+        android:text="Hod kostkou"
         android:textSize="28sp"
         android:textStyle="bold"
         android:textColor="#352060" />
@@ -28,8 +28,17 @@
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
         android:text="⚀"
-        android:textSize="120sp"
+        android:textSize="180sp"
         android:textColor="#352060" />
+
+    <TextView
+        android:id="@+id/tvHistory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Predchozi: —"
+        android:textSize="18sp"
+        android:textColor="#6A5A99" />
 
     <Button
         android:id="@+id/btnRoll"
