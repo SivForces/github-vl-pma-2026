@@ -1,0 +1,1 @@
+Přidána animace převrácení kostky a vyskakující číslice po dokončení otáčení.
