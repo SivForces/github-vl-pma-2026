@@ -82,7 +82,7 @@
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:text="@string/souhrn"
-        android:background="#DC6F4B31"
+        android:background="#DCF0C6A8"
         android:layout_marginTop="20dp"
         android:padding="16dp"
         />
