@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MyApp03_Objednavka</string>
+    <string name="cokolada">Cokolada s prichuti kavy</string>
+    <string name="objednat">Objednat</string>
+    <string name="souhrn">Souhrn objednavky</string>
+    <string name="double_baleni">2x baleni</string>
+    <string name="capri">L\'or Capri</string>
+    <string name="forza">L\'or Forza</string>
+    <string name="classique">L\'or Classique</string>
+    <string name="choose">Zvolte kavu:</string>
+    <string name="main_title">Objednavka kavy</string>
 </resources>
