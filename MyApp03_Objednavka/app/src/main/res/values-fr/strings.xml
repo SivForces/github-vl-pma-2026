@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">MyApp03_Commande</string>
+    <string name="cokolada">Chocolat au café</string>
+    <string name="objednat">Commande</string>
+    <string name="souhrn">Résumé de la commande</string>
+    <string name="double_baleni">Pack de deux</string>
+    <string name="capri">L\'or Capri</string>
+    <string name="forza">L\'or Forza</string>
+    <string name="classique">L\'or Classique</string>
+    <string name="choose">Choisir le café:</string>
+    <string name="main_title">Commande de café</string>
+</resources>
