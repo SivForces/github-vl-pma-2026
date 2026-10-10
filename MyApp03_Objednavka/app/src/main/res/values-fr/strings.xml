@@ -1,12 +1,26 @@
 <resources>
     <string name="app_name">MyApp03_Commande</string>
-    <string name="cokolada">Chocolat au café</string>
-    <string name="objednat">Commande</string>
+    <string name="main_title">Commande de café</string>
+    <string name="choose_type">Choisir le café :</string>
+    <string name="choose_size">Choisir sa taille:</string>
+    <string name="order">Commander</string>
     <string name="souhrn">Résumé de la commande</string>
-    <string name="double_baleni">Pack de deux</string>
+    <string name="double_baleni">Double espresso</string>
+    <string name="chocolate">Chocolat au café</string>
     <string name="capri">L\'or Capri</string>
     <string name="forza">L\'or Forza</string>
     <string name="classique">L\'or Classique</string>
-    <string name="choose">Choisir le café:</string>
-    <string name="main_title">Commande de café</string>
+
+    <string name="size_s">Petit (S)</string>
+    <string name="size_m">Moyen (M)</string>
+    <string name="size_l">Grand (L)</string>
+    <string name="size_xl">Très grand (XL)</string>
+
+    <string name="coffee_label">Café : %1$s</string>
+    <string name="size_label">Taille : %1$s</string>
+    <string name="extras_label">Suppléments : %1$s</string>
+    <string name="no_extras">Aucun supplément</string>
+    <string name="double_espresso_extra">Double espresso (+15 Kč)</string>
+    <string name="chocolate_extra">Chocolat (+10 Kč)</string>
+    <string name="total_price">Total : %1$d Kč</string>
 </resources>

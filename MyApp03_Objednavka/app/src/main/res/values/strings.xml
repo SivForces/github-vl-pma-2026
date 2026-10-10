@@ -1,12 +1,26 @@
 <resources>
-    <string name="app_name">MyApp03_Objednavka</string>
-    <string name="cokolada">Cokolada s prichuti kavy</string>
-    <string name="objednat">Objednat</string>
-    <string name="souhrn">Souhrn objednavky</string>
-    <string name="double_baleni">2x baleni</string>
+    <string name="app_name">MyApp03_Order</string>
+    <string name="main_title">Coffee ordering</string>
+    <string name="choose_type">Choose coffee:</string>
+    <string name="choose_size">Choose size:</string>
+    <string name="order">Order</string>
+    <string name="souhrn">Order summary</string>
+    <string name="double_baleni">Double espresso</string>
+    <string name="chocolate">Coffee-flavoured chocolate</string>
     <string name="capri">L\'or Capri</string>
     <string name="forza">L\'or Forza</string>
     <string name="classique">L\'or Classique</string>
-    <string name="choose">Zvolte kavu:</string>
-    <string name="main_title">Objednavka kavy</string>
+
+    <string name="size_s">Small (S)</string>
+    <string name="size_m">Medium (M)</string>
+    <string name="size_l">Large (L)</string>
+    <string name="size_xl">Extra large (XL)</string>
+
+    <string name="coffee_label">Coffee: %1$s</string>
+    <string name="size_label">Size: %1$s</string>
+    <string name="extras_label">Extras: %1$s</string>
+    <string name="no_extras">No extras</string>
+    <string name="double_espresso_extra">Double espresso (+15 Kč)</string>
+    <string name="chocolate_extra">Chocolate (+10 Kč)</string>
+    <string name="total_price">Total: %1$d Kč</string>
 </resources>

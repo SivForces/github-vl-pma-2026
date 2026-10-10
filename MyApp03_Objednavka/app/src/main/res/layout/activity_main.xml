@@ -7,6 +7,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="#FFF8F0"
     tools:context=".MainActivity">
 
     <TextView
@@ -14,78 +15,159 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/main_title"
-        android:textSize="24sp"
+        android:textSize="28sp"
         android:textStyle="bold"
-        android:textAlignment="center"
-        android:layout_marginBottom="16dp"
-    />
+        android:textColor="#4E342E"
+        android:textAlignment="textStart"
+        android:layout_marginBottom="16dp" />
 
     <TextView
         android:id="@+id/tvOrderTitle"
         android:layout_width="match_parent"
-        android:layout_height="30dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="@string/choose"
+        android:text="@string/choose_type"
         android:textAlignment="center"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        android:textColor="#6D4C41" />
 
     <RadioGroup
         android:id="@+id/rgCoffee"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
+
         <RadioButton
             android:id="@+id/rbClassique"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/classique"
             android:checked="true"
-            />
+            app:buttonTint="#8D5A3B"
+            android:textColor="#4E342E" />
+
         <RadioButton
             android:id="@+id/rbForza"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/forza"
-            />
+            app:buttonTint="#8D5A3B"
+            android:textColor="#4E342E" />
+
         <RadioButton
             android:id="@+id/rbCapri"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/capri"
-            />
+            app:buttonTint="#8D5A3B"
+            android:textColor="#4E342E" />
     </RadioGroup>
+
+    <TextView
+        android:id="@+id/tvSizeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/choose_size"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:textColor="#6D4C41" />
+
+    <RadioGroup
+        android:id="@+id/rgSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbSizeS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:checked="true"
+            app:buttonTint="#8D5A3B"
+            android:text="S"
+            android:textColor="#4E342E" />
+
+        <RadioButton
+            android:id="@+id/rbSizeM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:buttonTint="#8D5A3B"
+            android:text="M"
+            android:textColor="#4E342E" />
+
+        <RadioButton
+            android:id="@+id/rbSizeL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:buttonTint="#8D5A3B"
+            android:text="L"
+            android:textColor="#4E342E" />
+
+        <RadioButton
+            android:id="@+id/rbSizeXL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:buttonTint="#8D5A3B"
+            android:text="XL"
+            android:textColor="#4E342E" />
+    </RadioGroup>
+
 
     <CheckBox
         android:id="@+id/cbPackage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/double_baleni"
-        />
+        android:buttonTint="#8D5A3B"
+        android:textColor="#4E342E" />
 
     <CheckBox
         android:id="@+id/cbChocolate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/cokolada"
-        />
+        android:text="@string/chocolate"
+        android:buttonTint="#8D5A3B"
+        android:textColor="#4E342E" />
 
-    <Button
-        android:id="@+id/btnOrder"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/objednat"
-        android:textAlignment="center"
-        />
-
-    <TextView
-        android:id="@+id/tvOrder"
+    <!-- Центрована кнопка -->
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:text="@string/souhrn"
-        android:background="#DCF0C6A8"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="12dp">
+
+        <Button
+            android:id="@+id/btnOrder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/order"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#795548" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layoutSummary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:padding="16dp"
-        />
+        android:orientation="vertical"
+        android:background="#F0C6A8">
+
+        <TextView
+            android:id="@+id/tvOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="60dp"
+            android:text="@string/souhrn"
+            android:textColor="#4E342E"
+            android:padding="16dp" />
+    </LinearLayout>
 
     <ImageView
         android:id="@+id/ivCoffee"
@@ -94,6 +176,6 @@
         android:layout_marginTop="20dp"
         android:src="@drawable/lor_classique"
         android:scaleType="fitCenter"
-        />
+        android:contentDescription="@string/classique" />
 
 </LinearLayout>

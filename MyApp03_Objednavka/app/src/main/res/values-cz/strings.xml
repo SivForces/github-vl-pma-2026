@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">MyApp03_Objednavka</string>
+    <string name="main_title">Objednávka kávy</string>
+    <string name="choose_type">Zvolte kávu:</string>
+    <string name="choose_size">Zvolte velikost:</string>
+    <string name="order">Objednat</string>
+    <string name="souhrn">Souhrn objednávky</string>
+    <string name="double_baleni">Dvojité espresso</string>
+    <string name="chocolate">Čokoláda s příchutí kávy</string>
+    <string name="capri">L\'or Capri</string>
+    <string name="forza">L\'or Forza</string>
+    <string name="classique">L\'or Classique</string>
+
+    <string name="size_s">Malá (S)</string>
+    <string name="size_m">Střední (M)</string>
+    <string name="size_l">Velká (L)</string>
+    <string name="size_xl">Extra velká (XL)</string>
+
+    <string name="coffee_label">Káva: %1$s</string>
+    <string name="size_label">Velikost: %1$s</string>
+    <string name="extras_label">Doplňky: %1$s</string>
+    <string name="no_extras">Bez doplňků</string>
+    <string name="double_espresso_extra">Dvojité espresso (+15 Kč)</string>
+    <string name="chocolate_extra">Čokoláda (+10 Kč)</string>
+    <string name="total_price">Celkem: %1$d Kč</string>
+</resources>
