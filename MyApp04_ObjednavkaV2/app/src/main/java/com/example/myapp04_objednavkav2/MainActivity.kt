@@ -62,16 +62,9 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        binding.rbClassique.setOnClickListener {
-            binding.ivClassique.setImageResource(R.drawable.lor_classique)
-        }
-
-        binding.rbForza.setOnClickListener {
-            binding.ivForza.setImageResource(R.drawable.lor_forza)
-        }
-
-        binding.rbCapri.setOnClickListener {
-            binding.ivCapri.setImageResource(R.drawable.lor_capri)
+        binding.rgCoffee.setOnCheckedChangeListener { _, _ ->
+            updatePrice()
+            updateImage()
         }
 
     }
@@ -99,5 +92,13 @@ class MainActivity : AppCompatActivity() {
         binding.tvTotalPrice.text = "Celkem: $totalPrice Kc"
     }
 
-
+    private fun updateImage() {
+        val imageRes = when (binding.rgCoffee.checkedRadioButtonId) {
+            binding.rbClassique.id -> R.drawable.lor_classique
+            binding.rbForza.id -> R.drawable.lor_forza
+            binding.rbCapri.id -> R.drawable.lor_capri
+            else -> R.drawable.lor_classique
+        }
+        binding.ivCoffee.setImageResource(imageRes)
+    }
 }
