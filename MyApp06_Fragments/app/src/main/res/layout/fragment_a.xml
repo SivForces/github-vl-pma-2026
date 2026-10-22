@@ -10,6 +10,7 @@
         android:layout_height="match_parent"
         android:text="Toto je fragment A"
         android:textSize="24sp"
+        android:textAlignment="center"
         android:background="#FFCDD2"/>
 
 </FrameLayout>

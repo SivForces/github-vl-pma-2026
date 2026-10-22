@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.myapp06_fragments.databinding.ActivityMainBinding
+import androidx.fragment.app.Fragment
 
 class MainActivity : AppCompatActivity() {
 
@@ -25,7 +26,25 @@ class MainActivity : AppCompatActivity() {
         }
 
         binding.btnFragmentA.setOnClickListener {
-
+            replaceFragment(FragmentA())
         }
+
+        binding.btnFragmentB.setOnClickListener {
+            replaceFragment(FragmentB())
+        }
+
+        binding.btnFragmentC.setOnClickListener {
+            replaceFragment(FragmentC())
+        }
+    }
+
+    private fun replaceFragment(fragment: Fragment) {
+        val fragmentManager = supportFragmentManager
+
+        val fragmentTransaction = fragmentManager.beginTransaction()
+
+        fragmentTransaction.replace(R.id.fragmentContainer, fragment)
+
+        fragmentTransaction.commit()
     }
 }

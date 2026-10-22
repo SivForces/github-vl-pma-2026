@@ -9,14 +9,15 @@
     tools:context=".MainActivity">
 
     <!-- Zde se budou dynamicky zobrazovat naše Fragmenty -->
+
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="296dp"
+        android:layout_marginTop="16dp"
         android:orientation="horizontal"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -35,6 +36,7 @@
             android:layout_margin="8dp"
             android:layout_weight="1"
             android:text="Zobrazit Fragment B" />
+
     </LinearLayout>
 
     <androidx.fragment.app.FragmentContainerView
@@ -45,5 +47,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
+
+    <Button
+        android:id="@+id/btnFragmentC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:text="Zobrazit Fragment C"
+        app:layout_constraintBottom_toBottomOf="@+id/fragmentContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.976" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

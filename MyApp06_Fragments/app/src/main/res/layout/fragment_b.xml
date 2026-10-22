@@ -8,7 +8,9 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#BBDEFB"
         android:text="Toto je fragment B"
-        android:background="#BBDEFB"/>
+        android:textAlignment="center"
+        />
 
 </FrameLayout>
