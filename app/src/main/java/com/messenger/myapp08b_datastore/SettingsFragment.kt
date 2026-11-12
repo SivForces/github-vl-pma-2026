@@ -31,6 +31,8 @@ class SettingsFragment : Fragment() {
     private val NICKNAME_KEY = stringPreferencesKey("NICKNAME")
     private val HARDCORE_KEY = booleanPreferencesKey("HARDCORE")
 
+    private var clickCount = 0
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -47,6 +49,12 @@ class SettingsFragment : Fragment() {
             val preferences = requireContext().dataStore.data.first()
             binding.etNickname.setText(preferences[NICKNAME_KEY] ?: "")
             binding.switchHardcoreMode.isChecked = preferences[HARDCORE_KEY] ?: false
+        }
+
+        // clicker
+        binding.btnClicker.setOnClickListener {
+            clickCount++
+            binding.tvCounter.text = clickCount.toString()
         }
 
         // 4. Reakce na kliknutí tlačítka Uložit
